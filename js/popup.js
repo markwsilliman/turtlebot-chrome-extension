@@ -95,7 +95,7 @@ cancelButton.onclick = function(){
 	cancel(myDomain,localStorage["id"]);
 	chrome.browserAction.setBadgeText({text: ''});
 	localStorage.removeItem('id');
-	setTimeout(function(){isOrdered()}, 10);
+	isOrdered();
 }
 
 //tell the server that we want coffee
